@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+body
+{
+  background: linear-gradient(to right, #f0f0f0, #d0d0d0)
+  font-family: Arial Helvetica, sans-serif;
+}
+header
+{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+nav ul      /*This will be the navigation menu*/
+{
+  list-style: none;      /*Removes the bullet points that would otherwise be made*/
+  padding: 0;
+  margin: 0;
+  display: flex;        /*This makes the items horizontal*/
+  justify-content: center;      /*This centers the menu items*/
+  gap: 20px;
+}
+nav ul li a
+{
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover
+{
+  background-color: #ddd;
+  color: #000;
+}
+section        /*This is for the main sections*/
+{
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+footer        /*Lastly, the footer*/
+{
+  font-size: 0.8em;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+}
