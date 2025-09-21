@@ -38,6 +38,7 @@ nav ul li a:hover {
   color: #FFD700; /* change color on hover */
 }
 
+/* Main content section */
 section {
   padding: 20px;
   margin: 20px;
@@ -49,6 +50,27 @@ section {
 
 section:hover {
   transform: scale(1.02); /* slight zoom effect */
+}
+
+/* Table styling */
+table {
+  width: 100%; /* full width */
+  border-collapse: collapse; /* merge borders */
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ccc; /* borders around cells */
+}
+
+th, td {
+  padding: 10px; /* spacing inside cells */
+  text-align: left; /* align text to the left */
+}
+
+th {
+  background-color: #4CAF50; /* green header background */
+  color: white; /* header text color */
 }
 
 footer {
