@@ -73,6 +73,59 @@ th {
   color: white; /* header text color */
 }
 
+/* Flexbox Layouts */
+.main-flex, .nav-flex, .contact-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Form Styling */
+input, textarea {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #005fa3;
+}
+
+/* Responsive Design */
+@media (min-width: 480px) {   /* phone */
+  .main-flex, .nav-flex, .contact-flex {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {   /* tablet */
+  .main-flex, .nav-flex, .contact-flex {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {  /* desktop */
+  .main-flex, .nav-flex, .contact-flex {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
 footer {
   font-size: 0.8em; /* smaller font */
   text-align: center; /* center text */
